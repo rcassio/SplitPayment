@@ -49,8 +49,6 @@ contract('SplitPayment', (accounts) => {
   });
 
   it('Should NOT split payment if caller is not owner', async () => {
-    //const owner = await splitPayment.owner();
-    //assert(msg.sender == owner, 'sender is NOT the owner');
     const recipients = [accounts[1], accounts[2], accounts[3]];
     const amounts = [40,20,30];
     try {
